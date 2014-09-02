@@ -33,8 +33,8 @@ public class Person4 {
       //Person 4 put your implementation here
         String plusone = "";
         for (int i = 0; i < input.length(); i++) {
-            int x = (int) input.codePointAt(i) + 1;
-            plusone.concat(String.valueOf((char) x));
+            int x = input.codePointAt(i) + 1;
+            plusone += (String.valueOf((char) x));
         }
         return plusone;
     }
