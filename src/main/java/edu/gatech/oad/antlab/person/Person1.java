@@ -31,10 +31,9 @@ public class Person1 {
      * @return the modified string
      */
     private String calc(String input) {
-        String firstLetter = input.substring(0, 1);
-        String secondLetter = input.substring(1, 2);
+        String firstAndSecondLetter = input.substring(0, 2);
         String body = input.substring(2);
-        return (body.concat(firstLetter)).concat(secondLetter);
+        return body.concat(firstAndSecondLetter);
     }
     /**
      * Return a string rep of this object
