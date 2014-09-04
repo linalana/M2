@@ -36,11 +36,11 @@ public class Person2 {
 	  Random rand = new Random();
           ArrayList strIn = new ArrayList();
           for (int i = 0; i < input.length(); i++) {
-              strIn.add(input.charAt(i));
+              strIn.add(input.substring(i, i+1));
           }
           String out = "";
           while(!strIn.isEmpty()) {
-              out = out + strIn.remove(rand.nextInt(strIn.size()));
+              out = out + (String)strIn.remove(rand.nextInt(strIn.size()));
           }
 	  return out;
 	}
