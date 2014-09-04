@@ -1,0 +1,19 @@
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+version = '1.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'AntLabMain-quickstart', 'Implementation-Version': version , 'Main-Class' : 'AntLabMain'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileFiles '/../lib/resources.jar'
+}
